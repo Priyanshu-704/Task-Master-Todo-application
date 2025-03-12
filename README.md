@@ -33,8 +33,7 @@ You need a modern web browser to view and run this application. No server-side s
 
 1. **Clone the repository**:
 
-   git clone https://github.com/Priyanshu-704/Task-Master-Tdod-application.git
-
+   git clone (https://github.com/Priyanshu-704/Task-Master-Todo-application.git)
 2.  **Navigate to the project folder**:
 
     cd task-master-todo
