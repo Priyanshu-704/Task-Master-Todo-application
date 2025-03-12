@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background: linear-gradient(125deg, #23ddee, #456ede); */
+  background-image: url("bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#task-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  width: 21.9%;
+  padding: 10px;
+  background-color: #5cb85c;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+#priority-select,
+#due-date,
+#category-select {
+  flex: 1 1 48%; /* Allow these inputs to take 48% width of the container */
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* #priority-select {
+    
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+  } */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px 0px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* @media (max-width: 775px) {
+    .search-filter {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      #search-input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      #filter-priority,
+      #filter-category {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    
+  #task-input,
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+} */
+
+/* @media (max-width: 480px) {
+    #search-input {
+        padding: 8px;
+        font-size: 14px;
+      }
+    
+      #filter-priority,
+      #filter-category {
+        padding: 8px;
+        font-size: 14px;
+      }
+    
+  #task-input,
+  button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  li {
+    font-size: 12px;
+  }
+} */
+.due-date {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #888;
+}
+
+.task-details {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.task-details .overdue {
+  color: red; /* Red for overdue tasks */
+}
+
+/* Styling for the Search & Filter section */
+.search-filter {
+  display: flex;
+  flex-grow: 1;
+  gap: 15px; /* Space between the input and select dropdowns */
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+/* Search input styling */
+#search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 270px;
+  box-sizing: border-box;
+}
+
+#search-input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+#filter-priority,
+#filter-category {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100px;
+  box-sizing: border-box;
+}
+
+/* Styling for filter dropdown when focused */
+#filter-priority:focus,
+#filter-category:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+

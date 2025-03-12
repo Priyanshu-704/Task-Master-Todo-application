@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task master</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+ <div class="main">
+    <div class="container">
+        <h1>Task Master</h1>
+    
+        <div class="search-filter">
+            <input type="text" id="search-input" placeholder="Search tasks..." />
+            
+            <!-- Filter by Priority -->
+            <select id="filter-priority">
+              <option value="">Filter by Priority</option>
+              <option value="high">High</option>
+              <option value="medium">Medium</option>
+              <option value="low">Low</option>
+            </select>
+            
+            <!-- Filter by Category -->
+            <select id="filter-category">
+              <option value="">Filter by Category</option>
+              <option value="work">Work</option>
+              <option value="personal">Personal</option>
+              <option value="study">Study</option>
+            </select>
+          </div>
+
+
+          
+
+        <!-- Form to add tasks -->
+        <form id="task-form">
+          <input type="text" id="task-input" placeholder="Add a new task" required>
+          
+         <div class="content"> <select id="priority-select" required>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+          <input type="date" id="due-date" required>
+
+          <select id="category-select" required>
+            <option value="work">Work</option>
+            <option value="personal">Personal</option>
+            <option value="shopping">Shopping</option>
+            <option value="others">Others</option>
+          </select>
+</div>
+          <button type="submit">Add Task</button>
+        </form>
+    
+        <!-- Task list -->
+        <ul id="task-list">
+          <!-- Tasks will appear here -->
+        </ul>
+      </div>
+    
+ </div>
+  <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
